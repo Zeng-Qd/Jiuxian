@@ -8,7 +8,8 @@
 }
 
 .clearfix {
-    *zoom:1;}
+    *zoom: 1;
+}
 
 .jx-wrap input {
     height: 40px;
@@ -27,7 +28,7 @@
 }
 
 .jx-wrap i {
-    background: url(/img/reg/regLogin-8.png) no-repeat 0 0;
+    background: url(../img/regLogin-8.png) no-repeat 0 0;
 }
 
 .jx-wrap {
@@ -92,7 +93,8 @@
     line-height: 14px;
 }
 
-.jx-reg a,.jx-reg a:hover {
+.jx-reg a,
+.jx-reg a:hover {
     color: #0066cc;
     margin-left: 20px;
 }
@@ -605,7 +607,8 @@
     margin: 38px auto 0 auto;
 }
 
-.jx-back-home,.jx-back-home:hover {
+.jx-back-home,
+.jx-back-home:hover {
     text-decoration: none;
     color: #fff;
 }
@@ -660,7 +663,7 @@
 .emailSuccess .successIcon {
     height: 60px;
     width: 60px;
-    background: url(/img/reg/regLogin-8.png) no-repeat 0 -146px;
+    background: url(../img/regLogin-8.png) no-repeat 0 -146px;
     margin-top: 85px;
     margin: 0 auto;
 }
@@ -709,7 +712,8 @@
     font-size: 14px;
 }
 
-.emailSuccess .Verific:hover,.emailSuccess .goShop:hover {
+.emailSuccess .Verific:hover,
+.emailSuccess .goShop:hover {
     text-decoration: none;
 }
 
@@ -744,7 +748,8 @@
     display: none;
 }
 
-.emailSuccess .emailPopTxt1,.emailSuccess .emailPopTxt3 {
+.emailSuccess .emailPopTxt1,
+.emailSuccess .emailPopTxt3 {
     height: 12px;
     padding: 4px 0;
     color: #999;
@@ -756,7 +761,7 @@
     top: -5px;
     width: 8px;
     height: 8px;
-    background: url(/img/reg/regLogin-8.png) no-repeat -456px 0;
+    background: url(../img/regLogin-8.png) no-repeat -456px 0;
 }
 
 .emailSuccess .emailPopTxt2 {
@@ -803,7 +808,7 @@
     position: absolute;
     right: 6px;
     top: 4px;
-    background: url(/img/reg/regLogin-8.png) no-repeat -468px 0;
+    background: url(../img/regLogin-8.png) no-repeat -468px 0;
     cursor: pointer;
 }
 
@@ -824,7 +829,7 @@
     position: absolute;
     left: 0px;
     top: 20px;
-    background: url(/img/reg/regLogin-8.png) no-repeat -482px -16px;
+    background: url(../img/regLogin-8.png) no-repeat -482px -16px;
 }
 
 /*普通登录begin*/
@@ -832,7 +837,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;width: 600px;
+    *zoom: 1;
+    width: 600px;
     height: 450px;
     overflow: hidden;
 }
@@ -854,7 +860,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;color: #999;
+    *zoom: 1;
+    color: #999;
     font-size: 16px;
 }
 
@@ -862,7 +869,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;font-size: 12px;
+    *zoom: 1;
+    font-size: 12px;
     color: #999;
     padding: 0 18px;
 }
@@ -912,7 +920,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;}
+    *zoom: 1;
+}
 
 .Frame .filter .userIconBox {
     display: inline-block;
@@ -936,7 +945,8 @@
 .Frame .filter p {
     display: inline-block;
     *display: inline;
-    *zoom: 1;font-size: 16px;
+    *zoom: 1;
+    font-size: 16px;
     margin-top: 11px;
     color: #ccc;
     position: absolute;
@@ -951,7 +961,8 @@
     float: none;
     display: inline-block;
     *display: inline;
-    *zoom: 1;position: absolute;
+    *zoom: 1;
+    position: absolute;
     left: 246px;
     top: 15px;
 }
@@ -962,7 +973,8 @@
     width: 16px;
     height: 16px;
     *display: inline;
-    *zoom:1; background-position: -486px -42px;
+    *zoom: 1;
+    background-position: -486px -42px;
     cursor: pointer;
     position: absolute;
     top: 14px;
@@ -996,7 +1008,8 @@
     background-position: -139px 0;
 }
 
-.mistakeTip,.mistakeTip02 {
+.mistakeTip,
+.mistakeTip02 {
     padding: 0 10px;
     height: 20px;
     color: #fff;
@@ -1058,17 +1071,20 @@
     margin-bottom: 16px;
 }
 
-.moreChoice .auto,.moreChoice .forgetPwd {
+.moreChoice .auto,
+.moreChoice .forgetPwd {
     color: #999;
     display: inline-block;
     *display: inline;
-    *zoom: 1;}
+    *zoom: 1;
+}
 
 .moreChoice .freeReg {
     color: #0066cc;
     display: inline-block;
     *display: inline;
-    *zoom: 1;float: right;
+    *zoom: 1;
+    float: right;
     padding-left: 13px;
 }
 
@@ -1115,7 +1131,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;width: 30px;
+    *zoom: 1;
+    width: 30px;
     height: 30px;
     margin-left: 12px;
     margin-top: 16px;
@@ -1182,7 +1199,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;border: 1px solid #dcdcdc;
+    *zoom: 1;
+    border: 1px solid #dcdcdc;
     text-align: center;
     font-family: "Microsoft Yahei";
     background-color: #f7f7f7;
@@ -1206,7 +1224,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;border: 1px solid #dcdcdc;
+    *zoom: 1;
+    border: 1px solid #dcdcdc;
     text-align: center;
     font-family: "Microsoft Yahei";
     font-size: 16px;
@@ -1238,7 +1257,8 @@
     float: right;
     display: inline-block;
     *display: inline;
-    *zoom: 1;margin-right: 30px;
+    *zoom: 1;
+    margin-right: 30px;
     margin-bottom: 7px;
     color: #999;
 }
@@ -1261,7 +1281,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;margin-left: 223px;
+    *zoom: 1;
+    margin-left: 223px;
     margin-right: 23px;
 }
 
@@ -1289,7 +1310,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;margin-top: 42px;
+    *zoom: 1;
+    margin-top: 42px;
 }
 
 .bindTitCon p {
@@ -1306,7 +1328,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;width: 68px;
+    *zoom: 1;
+    width: 68px;
     font-size: 16px;
     height: 42px;
     line-height: 42px;
@@ -1318,7 +1341,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;}
+    *zoom: 1;
+}
 
 .bindCon .auto a {
     color: #0066cc;
@@ -1349,7 +1373,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;}
+    *zoom: 1;
+}
 
 .bindCon .loginBtn a {
     color: #0066cc;
@@ -1489,7 +1514,8 @@
     top: 105px;
 }
 
-.regMenuList .rm-mail,.regMenuList .rm-phone {
+.regMenuList .rm-mail,
+.regMenuList .rm-phone {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -1568,7 +1594,8 @@
     font-weight: 700;
 }
 
-.regCon #password, .regCon #repassword {
+.regCon #password,
+.regCon #repassword {
     padding-right: 45px;
     width: 210px;
 }
@@ -1839,8 +1866,11 @@
 
 /*个人注册end*/
 /****************企业用户注册页面开始——李楠*******************/
-.firmRegMain .accNotic i,.firmRegMain .mainBox .firmRegIcon,.firmRegMain .mainBox .errorIcon,.firmRegMain .mainBox .firmCheckMore {
-    background: url(../img/reg/regLogin-8.png) no-repeat;
+.firmRegMain .accNotic i,
+.firmRegMain .mainBox .firmRegIcon,
+.firmRegMain .mainBox .errorIcon,
+.firmRegMain .mainBox .firmCheckMore {
+    background: url(../img/regLogin-8.png) no-repeat;
 }
 
 .firmRegMain {
@@ -2200,7 +2230,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;height: 40px;
+    *zoom: 1;
+    height: 40px;
     line-height: 40px;
     margin-right: 20px;
 }
@@ -2209,7 +2240,8 @@
     float: left;
     display: inline-block;
     *display: inline;
-    *zoom: 1;font-size: 14px;
+    *zoom: 1;
+    font-size: 14px;
 }
 
 .appeal .appealTit strong {
@@ -2263,7 +2295,7 @@
 }
 
 .appMistake i {
-    background: url(../img/reg/regLogin-8.png) no-repeat -162px 0;
+    background: url(../img/regLogin-8.png) no-repeat -162px 0;
     float: left;
     display: inline-block;
     width: 14px;
@@ -2296,7 +2328,8 @@
     border: 1px solid #cc0000;
 }
 
-.appealLink,.appealLink:hover {
+.appealLink,
+.appealLink:hover {
     color: #0066cc;
 }
 
@@ -2588,7 +2621,8 @@
     line-height: 30px;
 }
 
-.bindInfo .pro span,.bindInfo .pro1 span {
+.bindInfo .pro span,
+.bindInfo .pro1 span {
     color: #c00;
 }
 
@@ -2859,7 +2893,7 @@
 }
 
 .reg-confirm-bg {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     padding: 4px;
     border-radius: 5px;
     width: 400px;
@@ -2920,7 +2954,8 @@
     font-size: 0;
 }
 
-.reg-confirm-prompt i,.reg-confirm-prompt span {
+.reg-confirm-prompt i,
+.reg-confirm-prompt span {
     display: inline-block;
     vertical-align: middle;
 }
