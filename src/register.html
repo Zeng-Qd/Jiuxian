@@ -4,73 +4,9 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="https://misc.jiuxian.com/js/tingyun/passport-web-pc.js" type='text/javascript'></script>
     <title>酒仙网-白酒、红酒、洋酒、保健酒、黄酒、酒具官方旗舰店</title>
-    <!-- <script type="text/javascript">
-        var mobileRegex_o = "^1[3-9][0-9]{9}$";
-        // 对象 new RegExp
-        var mobileRegex_s = /^1[3-9][0-9]{9}$/;
-        // 字符串
-        var mobileRegex_s_star = /^1[3-9][0-9]{9}$|^([0-9]{3}\*{4}[0-9]{4})$/;
-        var mobileRegex_o_star = "^1[3-9][0-9]{9}$|^([0-9]{3}\\*{4}[0-9]{4})$";
-    </script> -->
-    <link href="./css/login-registor/base.css" type="text/css" rel="stylesheet" />
-    <link href="./css/login-registor/reg.css" rel="stylesheet" type="text/css" />
-    <!-- <script src="/js/jquery.min.js"></script>
-    <script src="/js/reg-login.js?v=201801040000"></script>
-    <script src="/js/third/ga/analytics.js"></script>
-    <script src="/js/base.js?v=20150623"></script> -->
-    <!-- 同盾测试
-<script type="text/javascript">
-    (function() {
-		var sessionId = getCookie('PTOKEN');	
-        _fmOpt = {
-            partner: 'jiuxian',
-            appName: 'jiuxian_web',
-            token: sessionId,
-			fpHost: 'https://fptest.fraudmetrix.cn',
-        	staticHost: 'statictest.fraudmetrix.cn',
-            tcpHost: 'fptest.fraudmetrix.cn',
-        	wsHost: 'fptest.fraudmetrix.cn:9090'
-        };
-        var cimg = new Image(1,1);
-        cimg.onload = function() {
-            _fmOpt.imgLoaded = true;
-        };
-        cimg.src = "https://fptest.fraudmetrix.cn/fp/clear.png?partnerCode=jiuxian&appName=jiuxian_web&tokenId=" + _fmOpt.token;
-        var fm = document.createElement('script'); 
-		fm.type = 'text/javascript'; 
-		fm.async = true;
-        fm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'statictest.fraudmetrix.cn/fm.js?ver=0.1&t=' + (new Date().getTime()/3600000).toFixed(0);
-        var s = document.getElementsByTagName('script')[0]; 
-		s.parentNode.insertBefore(fm, s);
-    })();
-</script>
--->
-    <!-- 同盾生产 -->
-    <script type="text/javascript">
-        (function () {
-            var sessionId = getCookie('PTOKEN');
-            _fmOpt = {
-                partner: 'jiuxian',
-                appName: 'jiuxian_web',
-                token: sessionId
-            };
-            var cimg = new Image(1, 1);
-            cimg.onload = function () {
-                _fmOpt.imgLoaded = true;
-            };
-            cimg.src = "https://fp.fraudmetrix.cn/fp/clear.png?partnerCode=jiuxian&appName=jiuxian_web&tokenId=" +
-                _fmOpt.token;
-            var fm = document.createElement('script');
-            fm.type = 'text/javascript';
-            fm.async = true;
-            fm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
-                'static.fraudmetrix.cn/fm.js?ver=0.1&t=' + (new Date().getTime() / 3600000).toFixed(0);
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(fm, s);
-        })();
-    </script>
+    <link href="./css/login-register/base.css" type="text/css" rel="stylesheet" />
+    <link href="./css/login-register/reg.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript">
         //活动域名
         var domain_activity = 'http://act.jiuxian.com';
@@ -167,149 +103,12 @@
                     </div>
                 </div>
                 <div class="jx-reg">
-                    欢迎来到酒仙网！<a id="regOrLogin" href="/login.htm">请登录</a>
+                    欢迎来到酒仙网！<a id="regOrLogin" href="login.html">请登录</a>
                 </div>
             </div>
         </div>
         <!--头部 结束-->
         <!--内容开始-->
-        <script type="text/javascript">
-            var K = {};
-        </script>
-        <script src="/js/region.js?v=201801030000" type="text/javascript"></script>
-        <script>
-            $(document).ready(function () {
-                // 初始化区域信息
-                initRegion();
-            });
-
-            function j(id) {
-                return document.getElementById(id);
-            }
-
-            // 初始化页面地址信息
-            function initRegion() {
-                code_init(K.kind_region[1], j("province"));
-                setCity(j("province"));
-                code_init(K.kind_region[j("province")], j("city"));
-                setReg(j("city"));
-            }
-
-            // 获取区域名称信息
-            function getRegion(areaId) {
-                var areaName = "";
-                var cityId = 2;
-                var provinceId = 2;
-                var cityName = "";
-                // 获取区域名称
-                for (var key in K.kind_region) {
-                    $(K.kind_region[key]).each(function () {
-                        if (areaId == this[0]) {
-                            areaName = this[1];
-                            cityId = key;
-                        }
-                    });
-                }
-                // 获取城市名称
-                var provinceName = "";
-                for (var key in K.kind_region) {
-                    $(K.kind_region[key]).each(function () {
-                        if (cityId == this[0]) {
-                            cityName = this[1];
-                            provinceId = key;
-                        }
-                    });
-                }
-                // 获取省份名称
-                for (var key in K.kind_region) {
-                    $(K.kind_region[key]).each(function () {
-                        if (provinceId == this[0]) {
-                            provinceName = this[1];
-                        }
-                    });
-                }
-
-                return provinceName + "-" + cityName + "-" + areaName + "-";
-            }
-
-            function code_init(arr, o) {
-                if (!arr)
-                    return;
-                if (!o)
-                    return;
-                o.length = 1;
-                for (var i = 0; i < arr.length; i++) {
-                    o.options[o.length] = new Option(arr[i][1], arr[i][0]);
-                }
-            }
-
-            function code_set(o, v) {
-                for (var i = 0; i < o.length; i++) {
-                    if (v == o.options[i].value) {
-                        o.selectedIndex = i;
-                        break;
-                    }
-                }
-            }
-
-            function code_clr(o) {
-                o.length = 0;
-            }
-            //设置城市
-            function setCity(o) {
-                var o1 = j("city");
-                o1.length = 1;
-                var v = o.options[o.selectedIndex].value;
-                if (v != 0) {
-                    code_init(K.kind_region[v], j("city"));
-                    setReg(j("city"));
-                }
-            }
-            // 设置区县
-            function setReg(o) {
-                var o1 = j("area");
-                o1.length = 1;
-                var v = o.options[o.selectedIndex].value;
-                if (v != 0) {
-                    code_init(K.kind_region[v], j("area"));
-
-                }
-            }
-            //公司所在地验证
-            function chkAddressAll() {
-                var returnVal = false;
-                var selProvincesVal = $("#province").val();
-                var selCitiesVal = $("#city").val();
-                var selDistrictsVal = $("#area").val();
-                jQuery.ajax({
-                    type: 'post',
-                    url: '/chkSelect.htm',
-                    data: {
-                        selProvinces: selProvincesVal,
-                        selCities: selCitiesVal,
-                        selDistricts: selDistrictsVal
-                    },
-                    cache: false,
-                    async: false,
-                    dataType: "json",
-                    success: function (data) {
-                        if (data.code == 0) {
-                            $("#warn_ssq").hide();
-                            returnVal = true;
-                        } else if (data.code == 101) {
-                            $("#warn_ssq").hide();
-                            alert(data.msg);
-                            returnVal = false;
-                        } else {
-                            $("#warn_ssq").show();
-                            returnVal = false;
-                        }
-                    }
-                });
-                return returnVal;
-            }
-        </script>
-        <script src="/js/Verification.js?v=201801030000" type="text/javascript"></script>
         <!--内容-->
         <div class="jx-main-bg" style="height:auto;">
             <div class="firmPersonalBox">
@@ -521,21 +320,6 @@
         </div>
         <!--尾部结束-->
         <!--99click(统计)-->
-        <script type="text/javascript" src="/js/third/99click/o_code.js"></script>
-        <script type="text/javascript">
-            (function (d) {
-                window._JX_INFO = window._JX_INFO || [];
-                _JX_INFO.push(["userId", getUserId()]);
-                _JX_INFO.push(["clientId", 10000]);
-                var s = d.createElement("script");
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = "https://misc.jiuxian.com/js/visittrack.min.js";
-                var s0 = d.getElementsByTagName("script")[0];
-                s0.parentNode.insertBefore(s, s0);
-            })(document);
-            //-->
-        </script>
     </div>
 </body>
 
