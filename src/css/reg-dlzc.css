@@ -2016,7 +2016,7 @@
     display: inline;
     margin: 10px 10px 0 20px;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .firmRegMain .mainBox .firmAccount {
